@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>html の入力補助サイト | Gifted Style</title>
+    <meta name="description" content="html の入力補助サイトです。ボタンを押すとテキスト欄に入力できます。"/>
+  </head>
+<body>
+このサイトは小規模の html をサクっと作る事を目的としたサイトです。</br></br>ボタンを押すとテキスト欄に入力できます。</br>Ctrl キーを押しながらボタンを押すと説明文を見れます。</br>
+<textarea id="textbox" rows="20" cols="150"></textarea></br></br>
+<button onclick="Button1()">&lt;a href=&quot;URL&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;</button>
+<button onclick="Button2()">&lt;img src=&quot;画像のファイルパス&quot; alt=&quot;代替テキスト&quot&gt;</button></br>
+<button onclick="Button3()">&lth1&gt;>&lt/h1&gt;</button>
+<button onclick="Button4()">&lth2&gt;>&lt/h2&gt;</button>
+<button onclick="Button5()">&lth3&gt;>&lt/h3&gt;</button>
+<button onclick="Button6()">&lth4&gt;>&lt/h4&gt;</button>
+<button onclick="Button7()">&lth5&gt;>&lt/h5&gt;</button>
+<button onclick="Button8()">&lth6&gt;>&lt/h6&gt;</button></br>
+<button onclick="Button9()">table&lt&gt;</button>
+<button onclick="Button10()">&ltthread&gt;&lt/thread&gt;</button>
+<button onclick="Button11()">&lttbody&gt;&lt/tbody&gt;</button>
+<button onclick="Button12()">&lttr&gt;&lt/tr&gt;</button>
+<button onclick="Button13()">&ltth&gt;&lt/th&gt;</button>
+<button onclick="Button14()">&lttd&gt;&lt/td&gt;</button></br>
+<button onclick="Button15()">&ltstrong&gt;&lt/strong&gt;</button>
+<button onclick="Button16()">&ltspan&gt;&lt/span&gt;</button>
+<button onclick="Button17()">&ltdiv&gt;&lt/div&gt;</button>
+<button onclick="Button18()">ul&lt&gt;</button>
+<button onclick="Button19()">ol&lt&gt;</button>
+<button onclick="Button20()">&ltli&gt;&lt/li&gt;</button></br>
+<button onclick="Button21()">div.&lt&gt;</button>
+<button onclick="Button22()">div#&lt&gt;</button>
+<button onclick="Button23()">span.&lt&gt;</button>
+<button onclick="Button24()">span#&lt&gt;</button>
+<button onclick="Button25()">&lt!DOCTYPE html&gt;</button>
+<button onclick="Button26()">&lt/br&gt;</button>
+<button onclick="Button27()">Tab</button></br></br>
+<button onclick="Download()">作成した html をダウンロードする</button></br></br></br>
+参考サイト：</br>
+<a href="https://html-coding.co.jp/annex/dictionary/html/hx/" target="_blank">https://html-coding.co.jp/annex/dictionary/html/hx/</a></br>
+<a href="https://webrandum.net/html-tag-snippets/" target="_blank">https://webrandum.net/html-tag-snippets/</a>
+
+<script>
+  function Button1(str) {
+    Exec("<a href=\"\" target=\"_blank\"></a>", "リンクを配置します。\n\nhref に URL を入れます。", "</a>".length);
+  }
+  function Button2(str) {
+    Exec("<img src=\"\" alt=\"\">", "画像を配置します。\n\nsrc に画像のパスを入れます。\nalt に説明文を入れます。", "".length);
+  }
+  function Button3(str) {
+    Exec("<h1></h1>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて\<h1\>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button4(str) {
+    Exec("<h2></h2>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて<h1>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button5(str) {
+    Exec("<h3></h3>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて<h1>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button6(str) {
+    Exec("<h4></h4>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて<h1>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button7(str) {
+    Exec("<h5></h5>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて<h1>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button8(str) {
+    Exec("<h6></h6>", "「H」とは「Heading」の略で、見出しを意味するタグです。文章の章題や節題を記述し、その見出しの大きさに合わせて<h1>タグから<h6>タグまで設定できます。<h1>タグが一番大きな見出し（大見出し）になり、以下数字が小さくなるにしたがって、下位の見出し（小見出し）という意味です。同じ数値のものが複数ある場合、は同じランクとして扱われます。見出しの数字が小さくなるにしたがって文字が細く小さくなりますが、ブラウザによりその割合は異なります。この大きさを指定するためにはスタイルシートを使用することが必要です。1つのセクションの中で最初の見出しの後、低いランクの見出しが続く場合には、そのセクションの一部であるサブセクションを開始されたものとみなされます。", "</h1>".length);
+  }
+  function Button9(str) {
+    Exec("<table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th></th>\n<td></td>\n</tr>\n</tbody>\n</table>", "「TABLE」とは<tr>、<th>、<td>などと組み合わせて表を作成するためのタグです。表の基本的な構造は<table>～</table>の中に<tr>～</tr>で表の横部分を指定し、その中に<th>～</th>や<td>～</td>で表題や縦軸を指定してセルを定義します。この時ヘッダセルのテキストは、一般的なブラウザでは太字になりセンタリングされます。<table>はしばし、レイアウトのために使用されることがあります。しかし本来の使用方法ではありませんので、レイアウトで同様の効果が欲しい場合はスタイルシートを利用するとよいでしょう。 \n\n<table>\n <thead>\n  <tr>\n   <th></th>\n   <th></th>\n  </tr>\n </thead>\n <tbody>\n  <tr>\n   <th></th>\n   <td></td>\n  </tr>\n </tbody>\n</table>", "".length);
+  }
+  function Button10(str) {
+    Exec("<thead>\n    \n  </thead>", "「THEAD」とは「table header」表の行（水平方向）をグループ化するタグです。<thead>～</thead>で囲まれた内容は、表のヘッダ部分としてグループ化され、<table>の中はヘッダ部分を表す<tread>～</tread>部分、ボディ（表の本体）部分<tbody>～</tbody>、フッタ部分<tfoot>～</tfoot>に分けられます。このように分けることでブラウザはヘッダとフッタを先読みして表示したり、ヘッダとフッタを固定表示したままボディ部分だけをスクロールさせたりすることができます。ただし、これらのタグに対応していないブラウザの場合は、フッタをボディより上に表示してしまうことがあります。 \n\n<thread>\n\n</thread>", "\n  </thead>".length);
+  }
+  function Button11(str) {
+    Exec("<tbody>\n    \n  </tbody>", "「TBODY」とは、表の行（水平方向）をグループ化するタグです。<thead>～</thead>で囲まれた内容は、表のヘッダ部分としてグループ化され、<table>の中はヘッダ部分を表す<tread>～</tread>部分、ボディ部分<tbody>～</tbody>、フッタ部分<tfoot>～</tfoot>に分けられます。このように分けることでブラウザはヘッダとフッタを先読みして表示したり、ヘッダとフッタを固定表示したままボディ部分だけをスクロールさせたりすることができます。ただし、これらのタグに対応していないブラウザの場合は、フッタをボディより上に表示してしまうことがあります。 \n\n<tbody>\n\n</tbody>", "\n  </tbody>".length);
+  }
+  function Button12(str) {
+    Exec("<tr>\n    \n  </tr>", "「TR」とは「table row」の略で表の行部分（横方向）を指定するタグです。<tr>～</tr>で表の横部分を指定し、その中に<th>～</th>や<td>～</td>で表題や縦軸を指定してセルを定義します。<table>および<tr>はしばし、レイアウトのために使用されることがあります。しかし本来の使用方法ではありませんので、レイアウトで同様の効果が欲しい場合はスタイルシートを利用するとよいでしょう。 \n\n<tr>\n\n</tr>", "\n  </tr>".length);
+  }
+  function Button13(str) {
+    Exec("<th></th>", "「TH」とは「table header」の略で、表の見出しやタイトルとなるヘッダセルを作成するタグです。セルの内容がデータに対する見出しの場合はこの<th>要素を使用します。また、ヘッダセルのテキストは、一般的なブラウザでは太字になりセンタリングされます。表を作成する際には<tr>～</tr>で表の横部分を指定し、その中に<th>～</th>や<td>～</td>で表題や縦軸を指定してセルを定義します。<table>および<tr>はしばし、レイアウトのために使用されることがあります。しかし本来の使用方法ではありませんので、レイアウトで同様の効果が欲しい場合はスタイルシートを利用するとよいでしょう。\n\n<th></th>", "</th>".length);
+  }
+  function Button14(str) {
+    Exec("<td></td>", "「TD」とは「table data」の略で、テーブルセルの内容を指定します。セルの内容がデータの場合は、この<td>要素を使用します。表を作成する際には<tr>～</tr>で表の横部分を指定し、その中に<th>～</th>や<td>～</td>で表題や縦軸を指定してセルを定義します。<table>および<tr>はしばし、レイアウトのために使用されることがあります。しかし本来の使用方法ではありませんので、レイアウトで同様の効果が欲しい場合はスタイルシートを利用するとよいでしょう。 \n\n<td></td>", "</td>".length);
+  }
+  function Button15(str) {
+    Exec("<strong></strong>", "「STRONG」とはテキストの強調を表す際に使用するタグです。<strong>～</strong>で囲んだテキストを強調し、Internet ExplorerやNetscape Navigatorなどのブラウザでは太字で表示されます（ブラウザにより強調表現は異なります）。また、音声ブラウザでは強調部分が強く発音されることがあります。<strong>ほど強く強調を行わない場合には<em>要素を使用します。 \n\n<strong></strong>", "</strong>".length);
+  }
+  function Button16(str) {
+    Exec("<span>\n    \n  </span>", "「SPAN」とは、単体では特に意味を持たないタグですが、<span>～</span>で囲った部分をインライン要素としてグループ化することができるタグです。グループ化することで、指定した範囲にスタイルシートを適用したりすることができます。同じ意味を持つタグとして<div>がありますが、<div>はブロックレベル要素としてグループ化を行いますので、見出しや段落、リストなどとしてみなされ前後に改行が入ります。<span>はインライン要素で文章の一部として利用されますので前後に改行は入りません。 \n\n<span>\n\n</span>", "\n  </span>".length);
+  }
+  function Button17(str) {
+    Exec("<div>\n    \n  </div>", "「DIV」とは、単体では特に意味を持たないタグですが、<div>で囲った部分をブロックレベル要素としてグループ化することができるタグです。グループ化することで、align属性により水平方向の位置をまとめて指定したり、指定した範囲にスタイルシートを適用したりすることができます。同じ意味を持つタグとして<span>タグがありますが、<div>タグはブロックレベル要素としてグループ化を行いますので、見出しや段落、リストなどとしてみなされ前後に改行が入ります。<span>タグはインライン要素で文章の一部として利用されますので前後に改行は入りません。 \n\n<div>\n\n</div>", "\n  </div>".length);
+  }
+  function Button18(str) {
+    Exec("<ul>\n    <li></li>\n  </ul>", "「UL」とは「unordered list（順序がないリスト）」の略で、その名前の通り順序がない箇条書きのリストを表示する際に使用するタグです。順序がある番号付きのリストの場合は、<ol>を使用します。リストの各項目は<li>で記述し、type属性により、黒丸、白丸、黒い四角を指定することが可能です。また、<li>にtype属性をつけることで項目ごとに黒丸、白丸、黒い四角のマークを分けることができます。 \n\n<ul>\n <li></li>\n</ul>", "</li>\n  </ul>".length);
+  }
+  function Button19(str) {
+    Exec("<ol>\n    <li></li>\n  </ol>", "「OL」とは「ordered list（順序のあるリスト）」の略で、その名前の通り順序のある番号付きのリストを表示する際に使用するタグです。順序がないリストの場合は、<ul>タグを使用します。リストの各項目は<li>タグで記述し、type属性により、算用数字、アルファベット小文字、アルファベット大文字、ローマ数字大文字、ローマ数字小文字を指定することが可能です。また、初期値では1（もしくはa、iなど最初の値）から始まりますが、start属性を用いることで任意の開始番号を指定することができます。 \n\n<ol>\n <li></li>\n</ol>", "</li>\n  </ol>".length);
+  }
+  function Button20(str) {
+    Exec("<li></li>", "「LI」とは「list item」の略で、リストの項目を表示するために使用するタグです。<ul>～</ul> または<ol>～</ol>の間で使用します。<ul>タグはリスト項目に順序を付けたくない場合に使用します。リストは箇条書きで表記され、項目の間に順番や序列は発生しません。逆に順番を明らかにしたい場合は<ol>を使用すると項目が順番付きのリストになります。 \n\n<li></li>", "</li>".length);
+  }
+  function Button21(str) {
+    Exec("<div class=\"\">\n    \n  </div>", "div タグです。 \n\n<div class=\"\">\n\n</div>", "\n  </div>".length);
+  }
+  function Button22(str) {
+    Exec("<div id=\"\">\n    \n  </div>", "div タグです。 \n\n<div id=\"\">\n\n</div>", "\n  </div>".length);
+  }
+  function Button23(str) {
+    Exec("<span class=\"\">\n    \n  </span>", "span タグです。 \n\n<span class=\"\">\n\n</span>", "\n  </span>".length);
+  }
+  function Button24(str) {
+    Exec("<span id=\"\">\n    \n  </span>", "span タグです。 \n\n<span id=\"\">\n\n</span>", "\n  </span>".length);
+  }
+  function Button25(str) {
+    Exec("<!DOCTYPE html>", "<!DOCTYPE html>", "".length);
+  }
+  function Button26(str) {
+    Exec("</br>", "改行文字です。 </br>", "".length);
+  }
+  function Button27(str) {
+    Exec("  ", "タブです。このサイトではタブを半角空白 2 連にしています。", "".length);
+  }
+  function Exec(word, sayText, length){
+    if (event.ctrlKey) {
+      alert(sayText);
+      return;
+    }
+    const textarea = document.getElementById("textbox");
+
+    if(0 < textarea.selectionLength) {
+      return;
+    }
+
+    var sentence = textarea.value;
+    var len      = sentence.length;
+    var pos      = textarea.selectionStart;
+
+    var before   = sentence.substr(0, pos);
+    var word     = word;
+    var after    = sentence.substr(pos, len);
+
+    sentence = before + word + after;
+
+    textarea.value = sentence;
+    textarea.focus();
+    textarea.selectionStart = before.length + word.length - length;
+    textarea.selectionEnd = before.length + word.length - length;
+  }
+  function Download() {
+    const date = new Date();
+    date.setTime(date.getTime() - date.getTimezoneOffset() * 60 * 1000);
+    const str_date = date.toISOString().replace('T', ' ').substring(0,19);
+    const textarea = document.getElementById("textbox");
+    const fileName = str_date + "_作成したHTML.html";
+    if(typeof window.showSaveFilePicker != 'function'){
+      const blob = new Blob([textarea.value], {type:"text/plain"});
+      let downloadTag = document.createElement('a');
+      downloadTag.href = URL.createObjectURL(blob);
+      downloadTag.download = fileName;
+      downloadTag.click();
+    }
+    else
+    {
+      let downloadTag = document.createElement('a');
+      downloadTag.addEventListener('click', async () => {
+        const opts = {
+          suggestedName: fileName,
+          types: [{
+            description: 'Text file',
+            accept: {'text/plain': ['.html']},
+          }],
+        };
+        try{
+          const handle = await window.showSaveFilePicker(opts);
+          const writable = await handle.createWritable();
+          await writable.write(textarea.value);
+          await writable.close();
+        } catch {
+        }
+      });
+      downloadTag.click();
+    }
+  }
+  window.addEventListener("load", function() {
+    const textarea = document.getElementById("textbox");
+    textarea.value = '<html>\n<head>\n  <title></title>\n  <meta name="description" content=""/>\n  <style>\n    \n  </style>\n</head>\n<body>\n  \n  <script>\n    \n    function Func1() {\n        \n    }\n  <insertscript>\n</body>\n</html>'.replaceAll("insert", "/");
+    textarea.focus();
+  });
+</script>
+</body>
+</html>
