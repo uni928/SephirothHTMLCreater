@@ -189,6 +189,8 @@
     const textarea = document.getElementById("textbox");
     textarea.value = '<html>\n<head>\n  <title></title>\n  <meta name="description" content=""/>\n  <style>\n    \n  </style>\n</head>\n<body>\n  \n  <script>\n    \n    function Func1() {\n        \n    }\n  <insertscript>\n</body>\n</html>'.replaceAll("insert", "/");
     textarea.focus();
+    textarea.selectionStart = '<html>\n<head>\n  <title></title>\n  <meta name="description" content=""/>\n  <style>\n    \n  </style>\n</head>\n<body>\n  '.length;
+    textarea.selectionEnd = '<html>\n<head>\n  <title></title>\n  <meta name="description" content=""/>\n  <style>\n    \n  </style>\n</head>\n<body>\n  '.length;
   });
 </script>
 </body>
