@@ -26,7 +26,8 @@
 <button onclick="Button17()">&ltdiv&gt;&lt/div&gt;</button>
 <button onclick="Button18()">ul&lt&gt;</button>
 <button onclick="Button19()">ol&lt&gt;</button>
-<button onclick="Button20()">&ltli&gt;&lt/li&gt;</button></br>
+<button onclick="Button20()">&ltli&gt;&lt/li&gt;</button>
+<button onclick="Button29()">&lt&gt;&lt/&gt;</button></br>
 <button onclick="Button21()">div.&lt&gt;</button>
 <button onclick="Button22()">div#&lt&gt;</button>
 <button onclick="Button23()">span.&lt&gt;</button>
@@ -123,6 +124,9 @@
   }
   function Button28(str) {
     Exec('<font size="3" color="black"></font>', "フォントタグです。\nsize は 3 がデフォルトサイズです。", "</font>".length);
+  }
+  function Button29(str) {
+    Exec("<></>", "任意のタグです。", "></>".length);
   }
   function Exec(word, sayText, length){
     if (event.ctrlKey) {
