@@ -13,7 +13,8 @@
 <button onclick="Button5()">&lth3&gt;>&lt/h3&gt;</button>
 <button onclick="Button6()">&lth4&gt;>&lt/h4&gt;</button>
 <button onclick="Button7()">&lth5&gt;>&lt/h5&gt;</button>
-<button onclick="Button8()">&lth6&gt;>&lt/h6&gt;</button></br>
+<button onclick="Button8()">&lth6&gt;>&lt/h6&gt;</button>
+<button onclick="Button28()">&ltfont size="3" color="black"&gt;&lt/font&gt;</button></br>
 <button onclick="Button9()">table&lt&gt;</button>
 <button onclick="Button10()">&ltthread&gt;&lt/thread&gt;</button>
 <button onclick="Button11()">&lttbody&gt;&lt/tbody&gt;</button>
@@ -119,6 +120,9 @@
   }
   function Button27(str) {
     Exec("  ", "タブです。このサイトではタブを半角空白 2 連にしています。", "".length);
+  }
+  function Button28(str) {
+    Exec('<font size="3" color="black"></font>', "フォントタグです。\nsize は 3 がデフォルトサイズです。", "</font>".length);
   }
   function Exec(word, sayText, length){
     if (event.ctrlKey) {
